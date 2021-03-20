@@ -1,7 +1,7 @@
 ethereum-brute-force
 ---
 
-A small go program to check random privatekeys for a balance and record if a used ethereum address is found.
+A small go program to check random privatekeys for a balance against current ethereum address with balance and record if a used ethereum address is found.
 
 ### Setup
 Run the get addresses script to download all the ethereum addresses (this will take a while):
@@ -15,10 +15,6 @@ With golang installed;
 go run main.go
 ```
 
-The docker-compose is a work in progress (it's loading addresses too slow at the moment);
-```
-docker-compose up
-```
 
 ### About
 
@@ -29,11 +25,8 @@ is what I used to get the addresses dataset. You can find the query I used in th
 of the addresses file is at least double. This will take 100% of the memory on my 16GB RAM linux machine. It's probably time to work toward
 a distributed solution.
 
-May number gods smile upon you.
 
 # License
-
-Copyright 2017 Andrew Donley
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
